@@ -1,0 +1,88 @@
+--Pathfinding algorithm turle using A*
+local set = {-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,
+			 1,-2,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,
+			 1,1,1,1,1,-2,1,1,1,1,1,1,1,1,1,-1,
+			 1,1,1,1,1,1,1,-2,1,1,1,-2,1,1,1,-1,
+			 1,1,1,0,1,1,1,-2,1,1,1,1,1,1,1,-1,
+			 1,1,1,1,1,1,1,-2,1,1,1,1,1,1,1,-1,
+			 1,1,1,1,1,1,1,-2,1,1,1,1,1,1,1,-1,
+			 1,1,1,1,1,1,1,-2,1,1,1,1,-4,1,1,-1,
+			 1,1,1,1,-2,1,1,-2,1,1,1,1,1,1,1-1,
+			 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+}
+
+function set:ResolveRows()
+	local row = {}
+	local curRow = 0
+	for k,v in pairs(self) do
+		if (v ~= -1) then
+			table.insert(row[curRow],v)
+		else
+			curRow = curRow+1
+			row[curRow] = {}
+		end
+	end
+	return row
+end
+
+local function getNumSpots()
+	local numWalls = 0
+	local numSpots = 0
+	for k,v in pairs(set) do
+		if (v == -2) then
+			numWalls = numWalls+1
+		elseif (v ~= -1) then
+			numSpots = numSpots+1
+		end
+	end
+	return numSpots
+end
+
+local function findLowestScore(row)
+	for k,r in pairs(row) do
+		for z,c in pairs(r) do
+			if c == 0 then
+				return k, z
+			end
+		end
+	end
+	return nil
+end
+
+local function closedContainsDest(closed_set,row)
+	local rowx,col = 0,0
+	for k,r in pairs(row) do
+		for z,c in pairs(r) do
+			if c == 0 then
+				rowx = k
+				col = z
+				break
+			end
+		end
+	end
+	for k,r in pairs(closed_set) do
+		if (r[1] == rowx and r[2] == col) then
+			return true
+		end
+	end
+	return false
+end
+
+local rows = set:ResolveRows()
+
+local function solve(rowSet)
+	local open_set = rows
+	local closed_set = {}
+	local currentSquare = {findLowestScore(rows)}
+	while (#closed_set ~= getNumSpots()) do
+
+		table.insert(closed_set,currentSquare)
+		open_set[currentSquare[1]][currentSquare[2]] = "X"
+		if (closedContainsDest(closed_set,rows)) then
+			return true
+		end
+
+	end
+end
+
+solve(rows)

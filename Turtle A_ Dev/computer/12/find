@@ -1,0 +1,128 @@
+--Pathfinding algorithm turle using A*
+local curId = 0
+
+local squareMed = {
+	GetAvailableWalking = function(self)
+		local numRotate = 0
+		local okay = {}
+
+		if ( not turtle.detect()) then --Top
+			local temp = newSquare()
+			temp.x = self.x+1
+			temp.z = self.z
+			temp:GetHuerestic()
+			table.insert(okay,temp)
+		end
+		turtle.turnLeft()
+		if ( not turtle.detect()) then --Behind
+			local temp = newSquare()
+			temp.x = self.x
+			temp.z = self.z+1
+			temp:GetHuerestic()
+			table.insert(okay,temp)
+		end
+		turtle.turnLeft()
+		if ( not turtle.detect()) then
+			local temp = newSquare()
+			temp.x = self.x-1
+			temp.z = self.z
+			temp:GetHuerestic()
+			table.insert(okay,temp)
+		end
+		turtle.turnLeft()
+		if ( not turtle.detect()) then
+			local temp = newSquare()
+			temp.x = self.x
+			temp.z = self.z-1
+			temp:GetHuerestic()
+			table.insert(okay,temp)
+		end
+		turtle.turnLeft()
+		return okay
+	end,
+	GetCurrentSquare = function(self)
+		local x,y,x = gps.locate()
+		self.x = x
+		self.z = z
+	end,
+	GetHuerestic = function(self)
+	local x,y,z = gps.locate()
+	local dest = vector.new(15,1,5)
+	local cur  = vector.new(self.x,1,self.z)
+	self.h = cur - dest
+	end,
+}
+				
+function newSquare()
+	local temp = 
+	{
+		id = curId,
+		x = 0,
+		z = 0,
+		h = nil,
+		f = -1,
+		g = 0,
+	}
+	curId = curId+1
+	setmetatable(temp,{__index = squareMed})
+	return temp
+end
+
+function removeCurrentSquareFromOpen(set,square)
+	for k,v in pairs(set) do
+		if (v.id == square.id) then
+			table.remove(set,k)
+			break
+		end
+	end
+	return set
+end
+
+function squareWithLowestFScore( open )
+	local lowest = newSquare()
+	lowest.f = 10000000
+	for k,v in pairs(open) do
+		if v.f < lowest.f then
+			lowest = v
+		end
+	end
+	return lowest
+end
+
+function setClosedContainsDest(closed,dest)
+	for k,v in pairs(closed) do
+		if (v.x == dest.x and v.z == dest.z) then
+			return true
+		end
+	end
+	return false
+end
+
+local function solve()
+	local open_set = {}
+	local closed_set = {}
+
+
+	local originalSquare = newSquare()
+	originalSquare:GetCurrentSquare()
+	originalSquare.f = 0
+
+	local destinationSquare = newSquare()
+	destinationSquare.x = 15
+	destinationSquare.z = 5
+
+	table.insert(open_set,originalSquare)
+	while (#open_set ~= 0) do
+		local currentSquare = squareWithLowestFScore(open_set)
+		table.insert(closed_set,currentSquare)
+		open_set = removeCurrentSquareFromOpen(open_set,currentSquare)
+		if (setClosedContainsDest(closed_set,destinationSquare)) then
+			break
+		end
+
+		local adjacentSquares = currentSquare:GetAvailableWalking()
+
+	end
+end
+
+solve()
