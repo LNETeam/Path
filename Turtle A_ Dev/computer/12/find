@@ -1,16 +1,21 @@
 --Pathfinding algorithm turle using A* Demo
 local curId = 0
 
+local tArgs = {...}
+
 local squareMed = {
-	GetAvailableWalking = function(self)
+	GetAvailableWalking = function(self,finals)
 		local numRotate = 0
 		local okay = {}
-
 		if ( not turtle.detect()) then --Top
 			local temp = newSquare()
 			temp.x = self.x+1
 			temp.z = self.z
-			temp:GetHuerestic()
+			temp.postMove = 0
+			temp.g = self.g+1
+			temp:GetHuerestic(finals)
+			temp:GetF()
+			
 			table.insert(okay,temp)
 		end
 		turtle.turnLeft()
@@ -18,7 +23,11 @@ local squareMed = {
 			local temp = newSquare()
 			temp.x = self.x
 			temp.z = self.z+1
-			temp:GetHuerestic()
+			temp.postMove = 1
+			temp.g = self.g+1
+			temp:GetHuerestic(finals)
+			temp:GetF()
+			
 			table.insert(okay,temp)
 		end
 		turtle.turnLeft()
@@ -26,7 +35,11 @@ local squareMed = {
 			local temp = newSquare()
 			temp.x = self.x-1
 			temp.z = self.z
-			temp:GetHuerestic()
+			temp.postMove = 2
+			temp.g = self.g+1
+			temp:GetHuerestic(finals)
+			temp:GetF()
+			
 			table.insert(okay,temp)
 		end
 		turtle.turnLeft()
@@ -34,22 +47,31 @@ local squareMed = {
 			local temp = newSquare()
 			temp.x = self.x
 			temp.z = self.z-1
-			temp:GetHuerestic()
+			temp.postMove = 3
+			temp.g = self.g+1
+			temp:GetHuerestic(finals)
+			temp:GetF()
 			table.insert(okay,temp)
 		end
 		turtle.turnLeft()
 		return okay
 	end,
 	GetCurrentSquare = function(self)
-		local x,y,x = gps.locate()
+		local x,y,z = gps.locate()
 		self.x = x
 		self.z = z
 	end,
-	GetHuerestic = function(self)
+	GetF = function(self)
+		self.f = self.g + self.h
+		return self.f
+	end,
+	GetHuerestic = function(self,final)
 	local x,y,z = gps.locate()
-	local dest = vector.new(15,1,5)
+	local dest = vector.new(final.x,1,final.z)
 	local cur  = vector.new(self.x,1,self.z)
-	self.h = cur - dest
+	local t = cur:sub(dest)
+	self.h = t:length()
+
 	end,
 }
 				
@@ -62,6 +84,8 @@ function newSquare()
 		h = nil,
 		f = -1,
 		g = 0,
+		postMove = -1,
+		parentSqare = {},
 	}
 	curId = curId+1
 	setmetatable(temp,{__index = squareMed})
@@ -70,12 +94,21 @@ end
 
 function removeCurrentSquareFromOpen(set,square)
 	for k,v in pairs(set) do
-		if (v.id == square.id) then
+		if (v.x == square.x and v.z == square.z) then
 			table.remove(set,k)
 			break
 		end
 	end
 	return set
+end
+
+function openSetContains( open , square)
+	for k,v in pairs(open) do
+		if (v.x == square.x and v.z == square.z) then
+			return true
+		end
+	end
+	return false
 end
 
 function squareWithLowestFScore( open )
@@ -89,13 +122,19 @@ function squareWithLowestFScore( open )
 	return lowest
 end
 
-function setClosedContainsDest(closed,dest)
+function setClosedContains(closed,dest)
 	for k,v in pairs(closed) do
 		if (v.x == dest.x and v.z == dest.z) then
 			return true
 		end
 	end
 	return false
+end
+
+function write(inf)
+	local handle = fs.open("temp",'w')
+	handle.write(inf)
+	handle.close()
 end
 
 local function solve()
@@ -108,21 +147,59 @@ local function solve()
 	originalSquare.f = 0
 
 	local destinationSquare = newSquare()
-	destinationSquare.x = 15
-	destinationSquare.z = 5
+	destinationSquare.x = tArgs[1]
+	destinationSquare.z = tArgs[2]
+
+	print(destinationSquare.x..","..destinationSquare.z)
 
 	table.insert(open_set,originalSquare)
 	while (#open_set ~= 0) do
 		local currentSquare = squareWithLowestFScore(open_set)
-		table.insert(closed_set,currentSquare)
+		
 		open_set = removeCurrentSquareFromOpen(open_set,currentSquare)
-		if (setClosedContainsDest(closed_set,destinationSquare)) then
+		--print(currentSquare.h)
+
+		--if (currentSquare.f ~= 0) then
+			if (currentSquare.postMove == 0) then 
+				turtle.forward()
+			elseif (currentSquare.postMove == 1) then 
+				turtle.turnLeft()
+				turtle.forward()
+				turtle.turnRight()
+			elseif (currentSquare.postMove == 2) then 
+				turtle.turnLeft()
+				turtle.turnLeft()
+				turtle.forward()
+				turtle.turnLeft()
+				turtle.turnLeft()
+			elseif (currentSquare.postMove == 3) then 
+				turtle.turnRight()
+				turtle.forward()
+				turtle.turnLeft()
+			end
+		--end
+		--if (setClosedContains(closed_set,destinationSquare)) then
+		
+		currentSquare:GetCurrentSquare()
+		print(currentSquare.x.." : "..destinationSquare.x)
+		print(currentSquare.z.." : "..destinationSquare.z)
+		if (currentSquare.x - destinationSquare.x == 0 and currentSquare.z - destinationSquare.z == 0) then
 			break
 		end
 
-		local adjacentSquares = currentSquare:GetAvailableWalking()
+		local adjacentSquares = currentSquare:GetAvailableWalking(destinationSquare)
+		for k,v in pairs(adjacentSquares) do
+			if (not setClosedContains(closed_set,v)) then
+				if (not openSetContains(open_set,v)) then
+					table.insert(open_set,v)
+				else
 
+				end
+			end
+		end	
+		write(textutils.serialize(adjacentSquares))
 	end
+	print("Done")
 end
 
 solve()
