@@ -1,4 +1,4 @@
---Pathfinding algorithm turle using A* Demo
+--Pathfinding algorithm turle using A* Demo Record
 local curId = 0
 
 local tArgs = {...}
