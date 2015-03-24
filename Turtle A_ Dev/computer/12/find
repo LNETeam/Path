@@ -1,4 +1,4 @@
---Pathfinding algorithm turle using A*
+--Pathfinding algorithm turle using A* Demo
 local curId = 0
 
 local squareMed = {

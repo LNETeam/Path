@@ -1,0 +1,923 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"App",
+				"AppName"
+			],
+			[
+				"stat",
+				"States"
+			],
+			[
+				"new",
+				"newSquare"
+			],
+			[
+				"clo",
+				"closed"
+			],
+			[
+				"set",
+				"setClosedContainsDest"
+			],
+			[
+				"cur",
+				"curId"
+			],
+			[
+				"sq",
+				"square"
+			],
+			[
+				"o",
+				"originalSquare"
+			],
+			[
+				"open",
+				"open_set"
+			],
+			[
+				"squa",
+				"squareWithLowestFScore"
+			],
+			[
+				"num",
+				"numSpots"
+			],
+			[
+				"curr",
+				"currentSquare"
+			],
+			[
+				"rows",
+				"rows"
+			],
+			[
+				"closed",
+				"closed_set"
+			],
+			[
+				"writ",
+				"writeFile"
+			],
+			[
+				"i",
+				"iLink"
+			],
+			[
+				"apt-get",
+				"apt-get_old"
+			],
+			[
+				"lo",
+				"locked_dir"
+			],
+			[
+				"pro",
+				"programController"
+			],
+			[
+				"da",
+				"eventDataBlacklist"
+			],
+			[
+				"old",
+				"old_clear"
+			],
+			[
+				"ins",
+				"instanceController"
+			],
+			[
+				"run",
+				"runSandbox"
+			],
+			[
+				"yield",
+				"yieldController"
+			],
+			[
+				"wa",
+				"waitForAny"
+			],
+			[
+				"yiel",
+				"yieldController"
+			],
+			[
+				"cou",
+				"coroutine"
+			],
+			[
+				"args",
+				"exArgs"
+			],
+			[
+				"ter",
+				"terminate"
+			],
+			[
+				"event",
+				"eventDataBlacklist"
+			],
+			[
+				"p",
+				"pullEvent"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"evn",
+				"eventData"
+			],
+			[
+				"deep",
+				"deepClone"
+			],
+			[
+				"orig",
+				"orig_val"
+			],
+			[
+				"cont",
+				"contInstance"
+			],
+			[
+				"local",
+				"local_dir"
+			],
+			[
+				"crea",
+				"createProcess"
+			],
+			[
+				"co",
+				"coroutine"
+			],
+			[
+				"fn",
+				"function	function"
+			],
+			[
+				"c",
+				"computer"
+			],
+			[
+				"cO",
+				"cObject"
+			],
+			[
+				"Op",
+				"OpenAllInterfaces"
+			],
+			[
+				"po",
+				"p_object"
+			],
+			[
+				"Add",
+				"AddInterface"
+			],
+			[
+				"Netwo",
+				"NetworkCollection"
+			],
+			[
+				"Get",
+				"GetMountedInterfaces"
+			],
+			[
+				"parent",
+				"parent_network"
+			],
+			[
+				"net",
+				"network"
+			],
+			[
+				"paren",
+				"parent_computer"
+			],
+			[
+				"ta",
+				"tablelength"
+			],
+			[
+				"wr",
+				"writeFile"
+			],
+			[
+				"apt",
+				"apt-get_ver"
+			],
+			[
+				"exi",
+				"existingKey"
+			],
+			[
+				"reg",
+				"regAdd"
+			],
+			[
+				"read",
+				"readAll"
+			],
+			[
+				"http",
+				"httpCheck"
+			],
+			[
+				"str",
+				"stripColor"
+			],
+			[
+				"ma",
+				"makeDir"
+			],
+			[
+				"func",
+				"funcs"
+			],
+			[
+				"start",
+				"startY"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"top",
+				"topPadding"
+			],
+			[
+				"err",
+				"errid"
+			],
+			[
+				"elem",
+				"element_clicked"
+			],
+			[
+				"me",
+				"menuIndex"
+			],
+			[
+				"de",
+				"determine"
+			],
+			[
+				"ele",
+				"elementFuncs"
+			],
+			[
+				"draw",
+				"drawBounds"
+			],
+			[
+				"up",
+				"updateFunc"
+			],
+			[
+				"in",
+				"insert"
+			],
+			[
+				"upper",
+				"upperCase"
+			],
+			[
+				"whi",
+				"white"
+			],
+			[
+				"ch",
+				"ch2_msgs"
+			],
+			[
+				"s",
+				"setTextColor"
+			],
+			[
+				"dra",
+				"drawData"
+			],
+			[
+				"id",
+				"idxc"
+			],
+			[
+				"pull",
+				"pullEvent"
+			],
+			[
+				"text",
+				"textutils"
+			],
+			[
+				"tex",
+				"textutils"
+			],
+			[
+				"write",
+				"writeToBuffer"
+			],
+			[
+				"idx",
+				"idxc"
+			],
+			[
+				"token",
+				"tokenMap"
+			],
+			[
+				"cha",
+				"charMap"
+			],
+			[
+				"os",
+				"os-boot"
+			],
+			[
+				"e",
+				"exist"
+			],
+			[
+				"repair",
+				"repairInfoController"
+			],
+			[
+				"rep",
+				"repairMode"
+			],
+			[
+				"re",
+				"reboot"
+			],
+			[
+				"dr",
+				"drawErrorRep"
+			],
+			[
+				"se",
+				"setCursorPos"
+			],
+			[
+				"errCodeL",
+				"errCodeLibrary"
+			],
+			[
+				"erro",
+				"errCode"
+			],
+			[
+				"boot",
+				"bootFrmk"
+			],
+			[
+				"manifest",
+				"manifest_file_contents"
+			],
+			[
+				"man",
+				"manifest_file_contents"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"sslua",
+				"Set Syntax: Lua"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git quick ",
+				"Git: Quick Commit"
+			],
+			[
+				"git quick",
+				"Git: Quick Add"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git q",
+				"Git: Quick Add"
+			],
+			[
+				"git qui",
+				"Git: Quick Add"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"sslu",
+				"Set Syntax: Lua"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"git ",
+				"Git: Pull"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"toggl",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ccom",
+				"Toggle Block Comment"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"ssl",
+				"Set Syntax: Lua"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"s",
+				"SFTP: Edit Server…"
+			],
+			[
+				"",
+				"Git: Pull"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"ssh",
+				"SFTP: Show Panel"
+			],
+			[
+				"ssgit",
+				"Set Syntax: SublimeGit Status"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"ss",
+				"Set Syntax: C#"
+			],
+			[
+				"ssc#",
+				"Set Syntax: C#"
+			],
+			[
+				"ssja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"a",
+				"About"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sql",
+			"git",
+			"pack",
+			"save",
+			"cd %APPDATA%\\Sublime Text 3\\Packages\\User",
+			"python",
+			"cd",
+			"git;",
+			"git init;",
+			"git init",
+			"git",
+			"sftp",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"ssh"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Austin/Documents/m-tech/README.md",
+		"/C/Users/Austin/Documents/m-tech/M-Tech.sublime-project",
+		"/C/hg-git/hggit/util.py",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/0/netwisp.data/NetworkCollection",
+		"/C/Users/Austin/Desktop/test.py",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Custom-WPA",
+		"/C/Users/Austin/Desktop/MTech OS/startup.lua",
+		"/C/Users/Austin/Documents/Advance-Mining/Advance-Mining/src/main/java/com/laneynet/items/EntysanCrystal.java",
+		"/C/Users/Austin/Desktop/CryDev/GameSDK/Scripts/Entities/Particle/ParticleEffect.lua",
+		"/C/Users/Austin/Documents/Advance-Mining/Advance-Mining/src/main/java/com/laneynet/cce/CCE.java",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Turtle A_ Dev/computer/12/find",
+		"/C/Users/Austin/Documents/GitHub/CCAPT/apt-get.lua",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/apt-get",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Turtle A_ Dev/computer/0/find",
+		"/C/Users/Austin/Documents/GitHub/CCAPT/INSTALL",
+		"/C/Users/Austin/Documents/GitHub/CCAPT/README.md",
+		"/C/Users/Austin/Downloads/Netwisp-master/Netwisp-master/resources/NetworkCollection",
+		"/C/Users/Austin/Downloads/Netwisp-master/Netwisp-master/ip-mon",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/9/sandbox",
+		"/C/Users/Austin/Desktop/CryDev/GameSDK/Scripts/Entities/Doors/Door.lua",
+		"/C/Users/Austin/Desktop/CryDev/GameSDK/Scripts/Entities/AI/Characters/Human.lua",
+		"/C/Users/Austin/Documents/Modeling and Game dev/CryEngine/scripts/test.lua",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/comds",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/9/trt",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/9/hello",
+		"/F/WPA/Super-WPA",
+		"/C/Users/Austin/AppData/Local/Temp/Rar$DIa0.762/parallel",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/9/info",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/.apt-get_ver",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/info",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/netwisp.data/NetworkCollection",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/ip-mon",
+		"/C/Users/Austin/AppData/Local/Temp/Rar$DIa0.335/apt-get",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/netwisp.data/serial",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/netwisp",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/0/ip-mon",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/tes",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/met.lua",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/4/redfile",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/5/test",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/5/info",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/5/apt-get",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/5/tr",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/5/.apt-get_ver",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/0/netwisp",
+		"/C/Users/Austin/Documents/m-tech/MTech_OS/sys/frameworks/CUIKit.frmk",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/New Moon/computer/2/apt-get",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Networking/computer/0/netwisp.data/Interface",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/202/CUIKit.frmk",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/202/LyqydOS/compositor",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/202/vman.af",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/202/LyqydOS/LICENSE",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/Dev/computer/1/install",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/3/CUIKit",
+		"/F/CC_Emulator/data/.ccemu/saves/computer/3/st",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/demo",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/CUIKit",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/dd",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/obj",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/dd",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/p2p",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/browser_new",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/browser",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/p2p.cfg",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/touchpoint",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/1/typing",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/2/connect",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/99/MTech_OS/startup",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/decman",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/encman",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/firewolf",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/etc/passwd",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/bin/mailclient",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/startup_new_old",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/firewolf_new_old",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/log",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/n",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/firewolf_new",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/animate",
+		"/C/Users/Austin/AppData/Roaming/.ccemuredux/sessions/CraftBox/computer/26/misc",
+		"/F/X(Main Drive)/ProgramFiles(x64)/Minecraft/CC Emulator/data/.ccemu/saves/computer/26/encman",
+		"/F/X(Main Drive)/ProgramFiles(x64)/Minecraft/CC Emulator/data/.ccemu/saves/computer/26/bu",
+		"/F/X(Main Drive)/ProgramFiles(x64)/Minecraft/CC Emulator/data/.ccemu/saves/computer/26/firewolf_new",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Ex/computer/4/startup",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Ex/computer/6/startup",
+		"/C/Users/Austin/Downloads/mpxj-4.5.0/mpxj/src/net/sf/mpxj/sample/MpxjCreate.java",
+		"/C/Users/Austin/AppData/Roaming/.minecraft/saves/Ex/computer/2/startup",
+		"/C/Users/Austin/Desktop/MTech OS/sys/frameworks/kernel.frmk",
+		"/C/Users/Austin/Desktop/MTech OS/sys/frameworks/mtech-core.frmk",
+		"/C/Users/Austin/Desktop/MTech OS/mte.sublime-project",
+		"/C/Users/Austin/Desktop/MTech OS/sys/lib/errors/0x001C.lib",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/Users/Austin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Austin/Documents/GitHub/NAB/project/main",
+		"/C/Users/Austin/Documents/GitHub/NAB/project/NARH"
+	],
+	"find":
+	{
+		"height": 58.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"newKeyItem",
+			"spool",
+			"input",
+			"s",
+			"if (color) then term.setTextColor(colors.green)",
+			"install",
+			"Install",
+			"install",
+			"                         ",
+			"                        ",
+			"                       ",
+			"                      ",
+			"                     ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"        ",
+			"e",
+			"	",
+			"e",
+			"E",
+			"e",
+			"E",
+			"e",
+			"E",
+			"e",
+			"E",
+			"e",
+			"E",
+			"e",
+			":",
+			"_",
+			"!",
+			"n",
+			",",
+			"_",
+			"#",
+			"|",
+			"$",
+			"M",
+			",",
+			"SimpleDateFormat",
+			"exist"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.git-commit":
+	{
+		"height": 140.0
+	},
+	"output.git-push":
+	{
+		"height": 140.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "path.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"startup",
+				"startup.lua"
+			],
+			[
+				"mtech",
+				"sys\\frameworks\\mtech-boot.frmk"
+			],
+			[
+				"mtech-boot",
+				"C:\\Users\\Austin\\Desktop\\MTech OS\\sys\\frameworks\\mtech-boot.frmk"
+			],
+			[
+				"m",
+				"C:\\Users\\Austin\\Desktop\\MTech OS\\sys\\frameworks\\mtech-boot.frmk"
+			],
+			[
+				"kern",
+				"C:\\Users\\Austin\\Desktop\\MTech OS\\sys\\frameworks\\kernel.frmk"
+			],
+			[
+				"kernel",
+				"C:\\Users\\Austin\\Desktop\\MTech OS\\sys\\frameworks\\kernel.frmk"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Austin\\AppData\\Roaming\\.minecraft\\saves\\Networking\\computer\\0\\NetwispDev.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
